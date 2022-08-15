@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: blanchedalmond;
+    font-family: 'roboto';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.form{
+    display: flex;
+    margin: 20px;
+}
+.input{
+    border: 0;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 1em;
+}
+.input:focus{
+    outline:none;
+}
+.addTask{
+    border: none;
+    padding: 10px;
+    background-color: azure;
+    border-radius: 5px;
+}
+.addTask:hover{
+    color: azure;
+    background-color: #333;
+    cursor: pointer;
+    transition: .5s ease;
+}
+.addTask:active{
+    transform: scale(0.95);
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    height: 50vh;
+    width: 50%;
+    background-color: transparent;
+    padding: 10px;
+    column-gap: 1em;
+}
+
+.list-item{
+    height: 20px;
+    font-weight: bold;
+    list-style: none;
+}
+.deleteBtn{
+    color: #000;
+    font-weight: bold;
+    height: 20px;
+    max-width:50px;
+    border: none;
+    background-color: rgb(255, 9, 4);
+    border-radius: 5px;
+}
+.deleteBtn:hover{
+    color: azure;
+    background-color: #333;
+    cursor: pointer;
+    transition: .5s ease;
+}
+.deleteBtn:active{
+    transform: scale(0.95);
+}
+.updateBtn{
+    color: #000;
+    font-weight: bold;
+    height: 20px;
+    max-width:50px;
+    border: none;
+    background-color: rgb(52, 252, 3);
+    border-radius: 5px;
+}
+.updateBtn:hover{
+    color: azure;
+    background-color: #333;
+    cursor: pointer;
+    transition: .5s ease;
+}
+.updateBtn:active{
+    transform: scale(0.95);
+}
